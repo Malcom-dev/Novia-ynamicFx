@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in</title>
+    <link rel="stylesheet" href="Login-in.css">
+</head>
+<body>
+    
+    <header>
+        <img src="IMAGES/brand_logo.jpg"><p>dynamic Forex<br> Acedemy</p>
+<nav>
+     <div class="ham-menu">
+        <span class="bar"></span>
+           <span class="bar"></span>
+             <span class="bar"></span>
+               </div>
+             <a href="#" class="active">Home</a>
+           <a href="#">About</a>
+        <a href="#">Plan</a>
+      <a href="#">Blog</a>
+    <a href="#">Contact</a>
+ <a href="#">ImageGallary</a>
+</nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <p>Login to your Novia Dynamic
+    <span>Dashboard</span></p>
+    <br>
+    <form action="Login-in.php" method="post">
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Your Email" required><br><br>
+        <label>password</label><br>
+        <input type="password" id="password" placeholder="Enter Your password" required><span class="password-toggle">&#128065;</span>
+        <br>
+    <br>
+    </form>
+    <footer>
+        <img src="">
+        <div class="footer">
+            <div class="rocket">&#x1f680;</div>
+            <p>Let Keep You Informed!<p>
+                <h6>Get lastest Forex market insight, analysis, trading tips and educational resources delivered straight to your inbox- <span>Subcribe Now</span></h6>
+                <div class="textbox">
+                    <input type="email" placeholder="Enter your email to continue"required>
+                </div>            
+                <div class="Sumbit">
+                    <button  type="Sumbit">Subcribe to our newsletter</button> 
+                </div>
+                <br>
+                <hr>
+                <h5>Novia DynamicFx Acedemy<h5>
+                    <a href="index.html">Home</a>
+                    <a href="plan.html">About</a>
+                    <a href="#">plan</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Image Gallery</a>
+                    <a href="#">Back to top</a>
+                    <br>
+                    <hr>
+                    <h5>Novia DynamicFx Contact us</h5>
+                    <br>
+                    <h6>Parliamentary American Coorner, Calabar, CRS. <br><span class="Media">&#9742;</span> +234 812 124 3790</h6>
+                    <h5>Connect with us on social media</h5>
+                    <div class="media-icon">
+                        <img src="IMAGES/Linkdlin.png">
+                        <img src="IMAGES/Telagram.png">
+                        <img src="IMAGES/tiktok.png">
+                        <img src="IMAGES/whatsapp.png">
+                        <img src="IMAGES/youtube.png">
+                    </div>
+                   
+                    <h6>Terms and conditions &#8599;</h6>
+                    <h6>Privacy policy &#8599;</h6>
+                   <h6> &copy;2025 Novia DynamicFx Acedemy. All Rights Reserved</h6>
+                   <br>
+                    Disclaimer:<span>&#x127468;</span><h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere egestas ultrices. Vivamus elementum tincidunt lectus et semper. Suspendisse convallis erat eu ante aliquet, id bibendum ex auctor<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere egestas ultrices. Vivamus elementum tincidunt lectus et semper. Suspendisse convallis erat eu ante aliquet, id bibendum ex auctor</h6>
+                    <br>
+                    Refund policy:<h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere egestas ultrices. Vivamus elementum tincidunt lectus et semper. Suspendisse convallis erat eu ante aliquet, id bibendum ex auctor<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                    </div>
+        </div>
+    </footer>
+    
+    <script>
+        const passwordToggle = document.querySelector('.password-toggle');
+        const passwordinput = document.querySelector('#password');
+
+        passwordToggle.addEventListener('click', () => {
+            if (passwordinput.type === 'password') {
+                passwordinput.type = 'Text';
+            } else {
+                passwordinput.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>

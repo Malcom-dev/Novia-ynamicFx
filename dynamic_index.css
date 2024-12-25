@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'poppins' Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    overflow-x:;
+    background-color: lavender;
+    color: black;
+}
+
+header{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    background-color: black;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header img{
+    width: 40px;
+    padding: 2 0 2 4;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header p{
+    color: wheat;
+    justify-content: left;
+    text-align: left;
+    padding-left: 0rem;
+}
+
+
+header img{
+transform: scale(1.1);
+}
+
+nav a{
+    font-size: 16px;
+    color: wheat;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover
+nav a:active{
+    color: #b74b4b;
+    border-bottom: 3px solid transparent;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    background-color: wheat;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* ####### media query########## */
+@media screen and (max-width: 700px){
+    header{
+        background-color: #b74b4b;
+        height: 50px;
+        padding-left: 5px;
+    }
+
+    body{
+        background-color:white;
+    }
+
+    nav a{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #b74b4b;
+        width: 100%;
+        text-align: center;
+        transition: 0,3s;
+        margin: 16px 0;
+    }
+
+    .img1 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+}
